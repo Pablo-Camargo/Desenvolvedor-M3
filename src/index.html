@@ -1,19 +1,938 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desenvolvedor M3</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desenvolvedor M3</title>
-  <link rel="stylesheet" href="main.css" />
-</head>
+  <body>
+    <div class="filter-mobi" id="filtersIner">
+      <div class="iner-filters color-iner" id="colorIner">
+        <div class="nav-header">
+          <h3>FILTRAR</h3>
+          <div class="btn-close" id="btnCloser"></div>
+        </div>
 
-<body>
+        <div class="box">
+          <div class="block color-list">
+            <div class="top-block padding-mobi" id="btColorFilter">
+              <h3 class="title">Cores</h3>
+              <div class="arrow"></div>
+            </div>
 
-</body>
-<h1>Desafio m3</h1>
+            <div class="content-block filtros" id="inerColor">
+              <ul class="content-list">
+                <li>
+                  <label
+                    for="color[Amarelo]"
+                    class="checkbox"
+                    data-color="Amarelo"
+                  >
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Amarelo"
+                      id="color[Amarelo]"
+                    />
+                    <p>Amarelo</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Azul]" class="checkbox" data-color="Azul">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Azul"
+                      id="color[Azul]"
+                    />
+                    <p>Azul</p>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    for="color[Branco]"
+                    class="checkbox"
+                    data-color="Branco"
+                  >
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Branco"
+                      id="color[Branco]"
+                    />
+                    <p>Branco</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Cinza]" class="checkbox" data-color="Cinza">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Cinza"
+                      id="color[Cinza]"
+                    />
+                    <p>Cinza</p>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    for="color[Laranja]"
+                    class="checkbox"
+                    data-color="Laranja"
+                  >
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Laranja"
+                      id="color[Laranja]"
+                    />
+                    <p>Laranja</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Verde]" class="checkbox" data-color="Verde">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Verde"
+                      id="color[Verde]"
+                    />
+                    <p>Verde</p>
+                  </label>
+                </li>
+                <li>
+                  <label
+                    for="color[Vermelho]"
+                    class="checkbox"
+                    data-color="Vermelho"
+                  >
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Vermelho"
+                      id="color[Vermelho]"
+                    />
+                    <p>Vermelho</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Preto]" class="checkbox" data-color="Preto">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Preto"
+                      id="color[Preto]"
+                    />
+                    <p>Preto</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Rosa]" class="checkbox" data-color="Rosa">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Rosa"
+                      id="color[Rosa]"
+                    />
+                    <p>Rosa</p>
+                  </label>
+                </li>
+                <li>
+                  <label for="color[Vinho]" class="checkbox" data-color="Vinho">
+                    <input
+                      class="itens_filtros checkbox btn-coresMobi"
+                      type="radio"
+                      name="coresMobi"
+                      data-color="Vinho"
+                      id="color[Vinho]"
+                    />
+                    <p>Vinho</p>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-<script src="bundle.js"></script>
+          <div class="block size-list">
+            <div class="top-block" id="btnSizes">
+              <h3 class="title">Tamanhos</h3>
+              <div class="arrow"></div>
+            </div>
+            <div class="content-block size-list size" id="inerSize">
+              <ul class="content-list grid-size">
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[P]"
+                      class="option-label select-size tamanhos size-butonMobi"
+                      data-value="P"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        id="size[P]"
+                        data-size="P"
+                      />
 
+                      p
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[M]"
+                      class="option-label select-size tamanhos size-butonMobi"
+                      data-value="M"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        id="size[M]"
+                        data-size="M"
+                      />
+
+                      m
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[G]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="G"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        value="G"
+                        id="size[G]"
+                        data-size="G"
+                      />
+
+                      g
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[GG]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="GG"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        value="GG"
+                        data-size="GG"
+                        id="size[GG]"
+                      />
+
+                      gg
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[U]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="U"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        data-size="U"
+                        id="size[U]"
+                      />
+
+                      U
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[36]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="36"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        value="36"
+                        data-size="36"
+                        id="size[36]"
+                      />
+
+                      36
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[38]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="38"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        value="38"
+                        id="size[38]"
+                        data-size="38"
+                      />
+
+                      38
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="radio">
+                    <label
+                      for="size[40]"
+                      class="option-label select-size tamanhos option-valueMobi"
+                      data-value="40"
+                    >
+                      <input
+                        class="optionChoice size-butonMobi"
+                        type="radio"
+                        name="tamanhosMobi"
+                        value="40"
+                        id="size[40]"
+                        data-size="40"
+                      />
+
+                      40
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block prices-block">
+            <div class="top-block" id="priceRnged">
+              <h3 class="title">Faixa de Preço</h3>
+              <div class="arrow"></div>
+            </div>
+
+            <div class="content-block" id="inerRanged">
+              <div class="slider slider-horizontal price-renge">
+                <ul class="content-list">
+                  <li class="price-renge-mobi">
+                    <label for="size-50">
+                      <input
+                        class="itens_filtros checkbox"
+                        type="radio"
+                        name="priceOpsMobi"
+                        value="50"
+                        data-num="50"
+                        id="size-50"
+                      />
+                      <div class="sizes-item-block">
+                        <span>de R$0 até R$50</span>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="price-renge-mobi">
+                    <label for="size-51">
+                      <input
+                        class="itens_filtros checkbox"
+                        type="radio"
+                        name="priceOpsMobi"
+                        value="51"
+                        data-id="51"
+                        id="size-51"
+                      />
+                      <div class="sizes-item-block">
+                        <span>de R$51 até R$150</span>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="price-renge-mobi">
+                    <label for="size-151">
+                      <input
+                        class="itens_filtros checkbox"
+                        type="radio"
+                        name="priceOpsMobi"
+                        value="151"
+                        data-id="151"
+                        id="size-151"
+                      />
+                      <div class="sizes-item-block">
+                        <span>de R$151 até R$300</span>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="price-renge-mobi">
+                    <label for="size-301">
+                      <input
+                        class="itens_filtros checkbox"
+                        type="radio"
+                        name="priceOpsMobi"
+                        value="301"
+                        data-id="301"
+                        id="size-301"
+                      />
+                      <div class="sizes-item-block">
+                        <span>de R$301 até R$500</span>
+                      </div>
+                    </label>
+                  </li>
+                  <li class="price-renge-mobi">
+                    <label for="size-500">
+                      <input
+                        class="itens_filtros checkbox"
+                        type="radio"
+                        name="priceOpsMobi"
+                        value="500"
+                        data-id="500"
+                        id="size-500"
+                      />
+                      <div class="sizes-item-block">
+                        <span>a partir de R$ 500</span>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="iner-filters ordena-filters" id="orderFilter">
+        <div class="nav-header">
+          <h3>Ordernar</h3>
+          <div class="btn-close" id="btnCloserOrder"></div>
+        </div>
+        <form>
+          <div class="box">
+            <div class="block color-list">
+              <div class="top-block padding-mobi" id="btnRecente">
+                <h3 class="title">Mais recente</h3>
+              </div>
+            </div>
+
+            <div class="block color-list">
+              <div class="top-block" id="btnBiggest">
+                <h3 class="title">Maior preço</h3>
+              </div>
+            </div>
+
+            <div class="block color-list">
+              <div class="top-block" id="btnLowest">
+                <h3 class="title">Menor preço</h3>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <header class="nav-header">
+      <nav>
+        <div class="container">
+          <div class="container-iner">
+            <div class="logo">
+              <a href="#" class="img-logo">
+                <img src="./img/logo-m3.png" alt="logo" />
+              </a>
+            </div>
+            <ul class="bag">
+              <li class="bag-iner-li">
+                <a href="" class="bag-iner-li">
+                  <div class="pil-bag">
+                    <div class="span-bag">
+                      <span id="number-span">0</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container">
+      <div class="flex-order">
+        <div class="inet-text">
+          <h1 class="titli-filter">Blusas</h1>
+        </div>
+
+        <div class="select-box">
+          <div class="select action-ordenar-produtos custom-select">
+            <div class="select-selected">Ordenar por:</div>
+
+            <div class="select-items">
+              <div class="option">
+                <label for="recente">
+                  <input
+                    type="radio"
+                    class="radio-select"
+                    id="recente"
+                    name="category"
+                    value="recente"
+                  />
+                  Mais recentes</label
+                >
+              </div>
+              <div class="option">
+                <label for="menor">
+                  <input
+                    type="radio"
+                    class="radio-select"
+                    id="menor"
+                    name="category"
+                    value="menor"
+                  />
+                  Menor preço</label
+                >
+              </div>
+
+              <div class="option">
+                <label for="maior">
+                  <input
+                    type="radio"
+                    class="radio-select"
+                    id="maior"
+                    name="category"
+                    value="maior"
+                  />
+                  Maior preço</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-filters">
+          <button class="btn-filters-iner" id="filters">Filtrar</button>
+          <button class="btn-filters-iner" id="orders">Ordenar</button>
+        </div>
+      </div>
+
+      <div class="itens-iner">
+        <div class="filter">
+          <form>
+            <div class="box">
+              <div class="block color-list">
+                <div class="top-block">
+                  <h3 class="title">Cores</h3>
+                </div>
+
+                <div class="content-block filtros">
+                  <ul class="content-list">
+                    <li>
+                      <label for="Amarelo" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Amarelo"
+                          id="Amarelo"
+                        />
+                        <p>Amarelo</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Azul" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Azul"
+                          id="Azul"
+                        />
+                        <p>Azul</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Branco" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Branco"
+                          id="Branco"
+                        />
+                        <p>Branco</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Cinza" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Cinza"
+                          id="Cinza"
+                        />
+                        <p>Cinza</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Laranja" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Laranja"
+                          id="Laranja"
+                        />
+                        <p>Laranja</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Verde" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Verde"
+                          id="Verde"
+                        />
+                        <p>Verde</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Vermelho" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Vermelho"
+                          id="Vermelho"
+                        />
+                        <p>Vermelho</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Preto" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Preto"
+                          id="Preto"
+                        />
+                        <p>Preto</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Rosa" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Rosa"
+                          id="Rosa"
+                        />
+                        <p>Rosa</p>
+                      </label>
+                    </li>
+                    <li>
+                      <label for="Vinho" class="checkbox clickbox">
+                        <input
+                          class="itens_filtros checkbox btn-cores"
+                          type="radio"
+                          name="cores"
+                          value="Vinho"
+                          id="Vinho"
+                        />
+                        <p>Vinho</p>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="block size-list">
+                <div class="top-block">
+                  <h3 class="title">Tamanhos</h3>
+                </div>
+                <div class="content-block size-list size">
+                  <ul class="content-list grid-size">
+                    <li>
+                      <div class="radio">
+                        <label
+                          for="P"
+                          class="option-label select-size tamanhos size-buton"
+                          data-num="P"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="P"
+                            id="P"
+                          />
+
+                          p
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio">
+                        <label
+                          for="M"
+                          class="option-label select-size tamanhos size-buton"
+                          data-num="M"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="M"
+                            id="M"
+                          />
+
+                          m
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio">
+                        <label
+                          for="G"
+                          class="option-label select-size tamanhos option-value"
+                          data-num="G"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="G"
+                            id="G"
+                          />
+
+                          g
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio">
+                        <label
+                          for="GG"
+                          class="option-label select-size tamanhos option-value"
+                          data-num="GG"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="GG"
+                            id="GG"
+                          />
+
+                          gg
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio">
+                        <label
+                          for="U"
+                          class="option-label select-size tamanhos option-value"
+                          data-num="U"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="U"
+                            id="U"
+                          />
+
+                          u
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio checkbox">
+                        <label
+                          for="36"
+                          class="option-label select-size tamanhos"
+                          data-num="36"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            id="36"
+                            data-num="36"
+                          />
+
+                          36
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio checkbox">
+                        <label
+                          for="38"
+                          class="option-label select-size tamanhos option-value"
+                          data-num="38"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            data-num="38"
+                            id="38"
+                          />
+
+                          38
+                        </label>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="radio checkbox">
+                        <label
+                          for="40"
+                          class="option-label select-size option-value tamanhos"
+                          data-num="40"
+                        >
+                          <input
+                            class="optionChoice size-buton"
+                            type="radio"
+                            name="tamanhos"
+                            id="40"
+                            data-num="40"
+                          />
+
+                          40
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="block prices-block">
+                <div class="top-block">
+                  <h3 class="title">Faixa de Preço</h3>
+                </div>
+
+                <div class="content-block">
+                  <div class="slider slider-horizontal price-renge">
+                    <ul class="content-list">
+                      <li class="priceBtn">
+                        <label for="50">
+                          <input
+                            class="itens_filtros checkbox price-opcs"
+                            type="radio"
+                            name="priceOps"
+                            value="50"
+                            id="50"
+                          />
+                          de R$0 até R$50
+                        </label>
+                      </li>
+                      <li class="priceBtn">
+                        <label for="51">
+                          <input
+                            class="itens_filtros checkbox price-opcs"
+                            type="radio"
+                            name="priceOps"
+                            value="51"
+                            id="51"
+                          />
+                          de R$51 até R$150
+                        </label>
+                      </li>
+                      <li class="priceBtn">
+                        <label for="151">
+                          <input
+                            class="itens_filtros checkbox price-opcs"
+                            type="radio"
+                            name="priceOps"
+                            value="151"
+                            id="151"
+                          />
+                          de R$151 até R$300
+                        </label>
+                      </li>
+                      <li class="priceBtn">
+                        <label for="301">
+                          <input
+                            class="itens_filtros checkbox price-opcs"
+                            type="radio"
+                            name="priceOps"
+                            value="301"
+                            id="301"
+                          />
+
+                          de R$301 até R$500
+                        </label>
+                      </li>
+                      <li class="priceBtn">
+                        <label for="500">
+                          <input
+                            class="itens_filtros checkbox price-opcs"
+                            type="radio"
+                            name="priceOps"
+                            value="500"
+                            id="500"
+                          />
+
+                          a partir de R$ 500
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row-protudcts">
+          <div class="products-line results"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="back-footer">
+      <div class="footer-iner">
+        <p>M3: Implantação de E-commerce VTEX</p>
+      </div>
+    </footer>
+    <div class="modal" id="modal-buy">
+      <div class="flex-modal">
+        <div class="iner">
+          <div class="content-modal">ADICIONADO O PRODUTO AO CARRINHO</div>
+        </div>
+        <div class="btn-iner" id="btnClose">
+          <div class="btn-close"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="bundle.js"></script>
 </html>
